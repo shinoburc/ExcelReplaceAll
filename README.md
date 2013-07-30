@@ -22,10 +22,10 @@ ExcelReplaceAll is replaceAll for Excel using Apache POI.
   $ ant
   ~~~
 
-3. Copy Excel for replace strings.
+3. Copy Excel for replace all strings.
 
   ~~~ sh
-  $ cp /hoge/fuga.xls xls-input/.
+  $ cp /hoge/hello.xls xls-input/.
   ~~~
 
 4. Configure
