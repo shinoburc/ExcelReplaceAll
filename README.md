@@ -15,23 +15,23 @@ ExcelReplaceAll is replaceAll for Excel using Apache POI.
     $ git clone git://github.com/shinoburc/ExcelReplaceAll
     ~~~
 
-2. Compile
-
-  ~~~ sh
-  $ cd ExcelReplaceAll
-  $ ant
-  ~~~
-
-3. Copy Excel for replace all strings.
+2. Copy Excel for replace all strings.
 
   ~~~ sh
   $ cp /hoge/hello.xls xls-input/.
   ~~~
 
-4. Configure
+3. Configure
 
   ~~~ sh
   $ echo "hello=world" >> src/application.ini
+  ~~~
+
+4. Compile
+
+  ~~~ sh
+  $ cd ExcelReplaceAll
+  $ ant
   ~~~
 
 5. Run
