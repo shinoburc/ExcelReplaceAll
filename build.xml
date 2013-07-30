@@ -1,0 +1,33 @@
+<project name="ExcelReplaceAll" default="compile" basedir=".">
+
+  <description>Replace all string in excel using Apache POI.</description>
+
+  <property name="version" value="5.1.0"/>
+
+  <path id="classpath">
+    <pathelement path="./classes" />
+    <pathelement path="./lib/poi.jar" />
+  </path>
+
+  <target name="clean" description="Deletes all build files.">
+    <delete dir="./classes"/>
+  </target>
+
+  <target name="compile" description="Compiles the java source files of the library.">
+    <mkdir dir="./classes"/> 
+    <native2ascii src="src" dest="classes">
+      <include name="**/*.ini" />
+    </native2ascii>
+    <javac destdir="./classes" debug="true" optimize="false" deprecation="true" includeantruntime="false" encoding="UTF-8">
+      <classpath refid="classpath"/>
+      <src path="./src"/>
+    </javac>
+  </target>
+
+  <target name="run">
+    <java classname="Main" fork="true" dir="./">
+      <classpath refid="classpath"/>
+    </java>
+  </target>
+
+</project>
