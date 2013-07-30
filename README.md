@@ -18,6 +18,7 @@ ExcelReplaceAll is replaceAll for Excel using Apache POI.
 2. Copy Excel for replace all strings.
 
   ~~~ sh
+  $ cd ExcelReplaceAll
   $ cp /hoge/hello.xls xls-input/.
   ~~~
 
@@ -30,7 +31,6 @@ ExcelReplaceAll is replaceAll for Excel using Apache POI.
 4. Compile
 
   ~~~ sh
-  $ cd ExcelReplaceAll
   $ ant
   ~~~
 
